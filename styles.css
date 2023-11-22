@@ -73,6 +73,31 @@ header .profile-image {
   border: 3px solid white;
   transition: all .5s;
 }
+
+.header-experience {
+  text-align: center;
+  background: url('images/portland.jpg') no-repeat center center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+.header-experience {
+  line-height: 1.5;
+}
+.header-experience .profile-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: all .5s;
+}
+
+
+h2 {
+  border-bottom: 2px solid grey;
+  padding-bottom: 5px;
+}
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
@@ -114,9 +139,28 @@ ul.skills {
   color: white;
   padding: 5px 10px;
   margin: 2px;
+  height: 50px;
 }
 
 .skills li:nth-child(odd) {
+  background: #0399ff;
+}
+
+ul.experience {
+  padding: 0;
+  text-align: center;
+}
+
+.experience li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ff9904;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.experience li:nth-child(odd) {
   background: #0399ff;
 }
 
@@ -166,6 +210,7 @@ a.social:hover {
 .clearfix {
   clear: both;
 }
+
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
